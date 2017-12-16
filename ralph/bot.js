@@ -54,6 +54,21 @@ bot.on('message', function (user, userID, channelID, message, evt) {
             //case 'ralphbomb'
             // Just add any case commands if you want to..
             //    for i in 10
+            
+            case 'birthday':
+                var name = args[1];
+                name.toLowerCase();
+                if (name == 'weilon' || name == 'whale') {
+                    bot.sendMessage({
+                        to: channelID,
+                        message: 'https://i.pinimg.com/originals/58/a9/41/58a941c56e9cf84178c34f05622409fc.jpg' // Nice picture of a whale saying "Happy Birthday"
+                    });
+                } else {
+                    bot.sendMessage({
+                        to: channelID,
+                        message: 'It whale birthday. Not yours. Sniffling dimwit.'
+                    });
+                }
          }
 
      }
