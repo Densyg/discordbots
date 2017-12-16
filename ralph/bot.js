@@ -51,8 +51,9 @@ bot.on('message', function (user, userID, channelID, message, evt) {
 
             break;
 
+            //case 'ralphbomb'
             // Just add any case commands if you want to..
-
+            //    for i in 10
          }
 
      }
